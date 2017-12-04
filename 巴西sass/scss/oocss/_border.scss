@@ -1,0 +1,58 @@
+
+
+////
+/// @group base-css-border
+////
+
+/// 边框设置
+.border          { border: $border-width solid $border-color; }
+/// 无边框
+.border-0        { border: none; }
+
+/// border-T | border-R | border-B | border-L
+@each $direction, $value in $directions {
+  /// @name .border-[T|R|B|L]
+  .border-#{$direction} {
+    border-#{$value}:  $border-width solid $border-color;
+  }
+}
+
+// border-#{$colors}   border-blue | border-red ...
+@each $colors, $value in $colors {
+  /// @name .border-[blue|red|yellow|...]
+  .border-#{$colors} {
+    border-#{$colors}: $value;
+  }
+}
+
+
+//
+// Border-radius
+//
+/// 边框圆角
+.radius         { border-radius: $border-radius; }
+/// 无边框圆角
+.radius-0       { border-radius: 0; }
+/// 圆形 => 边框圆角
+.radius-circle  { border-radius: 50%; }
+
+/// 只有top边有圆角
+.radius-T {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+/// 只有right边有圆角
+.radius-R {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+/// 只有bottom边有圆角
+.radius-B {
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+/// 只有left边有圆角
+.radius-L {
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}

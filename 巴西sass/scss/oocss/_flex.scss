@@ -1,0 +1,31 @@
+
+// flex 布局
+$flex-direction: () !default;
+$flex-direction: map-merge((
+        'row'     : 'justify-content',
+        'column'  : 'align-items'
+),$flex-direction);
+
+// flex-algin
+$flex-algin: (
+        'start'   : 'flex-start',
+        'end'     : 'flex-end',
+        'center'  : 'center',
+        'around'  : 'space-around',
+        'between' : 'space-between',
+);
+// for build the flex oocss
+@each $direction, $algin-item in $flex-direction {
+  @each $algin, $alginValue in $flex-algin {
+    /// @name .flex-[ row|column ]-[ start|end|center|around|between ]
+    .flex-#{$direction}-#{$algin} {
+      display: flex;
+      flex-direction: #{$direction};
+      justify-content: #{$alginValue};
+    }
+  }
+}
+
+.flex-center {
+  @include flex-center;
+}

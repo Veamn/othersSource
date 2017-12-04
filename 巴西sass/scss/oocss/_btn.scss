@@ -1,0 +1,217 @@
+
+// 全局的设置
+// the variable see './_theme.scss'
+
+
+.btn {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+
+  // 兼容样式
+  -webkit-appearance: none;
+  appearance: none;
+
+  // for center
+  text-align: center;
+  vertical-align: middle;
+  line-height:1;
+  // style
+  font-size: $btn-fontSize;
+  padding: $btn-default-padding;
+  color: $font-default-color;
+  border: 1px solid $border-color;
+  border-radius: $btn-radius;
+  background-color: #fff;
+}
+// 线框按钮
+.btn-line {
+  // colors
+  // 边框颜色
+  color: $fon
+  border-color:inherit;
+}
+
+@mixin btn-line {
+
+}
+@mixin btn-solid($bg) {
+  // 设置背景颜色
+  background-color: $bg;
+  // 设置字体颜色
+  color: #fff;
+
+  &:hover {
+  }
+}
+
+
+:hover
+:focus
+:disabled
+:active
+.selected
+
+
+
+
+
+// 实心按钮
+.btn-primary {
+
+}
+// 实心按钮
+primary
+// 文字按钮
+text
+
+
+// 线框按钮
+.btn-blue-line {
+    border: 1px solid #1973bf;
+    color: #1973bf;
+}
+.btn-blue-line:active {
+    background-color: #1973bf;
+    color: #fff;
+}
+.btn-red-line {
+    border: 1px solid #f20000;
+    color: #f20000;
+}
+.btn-red-line:active {
+    background-color: #f20000;
+    color: #fff;
+}
+.btn-orange-line {
+    border: 1px solid #ff8a00;
+    color: #ff8a00;
+}
+.btn-orange-line:active {
+    background-color: #ff8a00;
+    color: #fff;
+}
+.btn-gray-line{
+    border: 1px solid #C4C4C4;
+    color: #1d1d1d;
+}
+.btn-gray-line:active{
+    background-color: #C4C4C4;
+    color: #fff;
+}
+.btn-green-line{
+    border: 1px solid #259B24;
+    color: #259B24;
+}
+.btn-green-line:active{
+    background-color: #259B24;
+    color: #fff;
+}
+
+
+//实心按钮
+.btn[disabled],.btn[disabled="disabled"]{
+    background: #E5E5E5 !important;
+    border: 1px solid #D8D8D8 !important;
+    box-sizing: border-box;
+    color:#aaa ;
+}
+
+
+.btn-backGray{
+    border: 1px solid #BBBBBB;
+    background-color: #BBBBBB;
+    color: #fff
+}
+
+.btn-gray {
+    border: 1px solid #C4C4C4 !important;
+    background-color: #C4C4C4 !important;
+    color: #f9f9f9 !important;
+}
+.btn-green {
+    border: 1px solid #38aa00;
+    background-color: #38aa00 !important;
+    color: #fff;
+}
+.btn-green:active {
+    border: 1px solid #2f8e00;
+    background-color: #2f8e00;
+}
+.btn-blue {
+    border: 1px solid #1973bf;
+    background-color: #1973bf;
+    color: #fff;
+}
+.btn-blue:active {
+    border: 1px solid #356aba;
+    background-color: #356aba;
+}
+.btn-tint {
+    border: 1px solid #BAE4A5;
+    background-color: #BAE4A5;
+    color: #fff;
+}
+.btn-tint:active {
+    border: 1px solid #BAE4A5;
+    background-color: #BAE4A5;
+}
+.btn-red {
+    border: 1px solid #f20000;
+    background-color: #f20000;
+    color: #fff;
+}
+.btn-red:active {
+    border: 1px solid #f20000;
+    background-color: #f20000;
+}
+.btn-white {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    color: #666;
+}
+.btn-white:active {
+    background-color: #1973BF;
+    border-color: #1973BF;
+    color: #fff;
+}
+.btn-lightGray{
+    color: #999;
+    border: 1px solid #d8d8d8;
+}
+.btn-lightGray:active{
+    background-color: #f5f5f5;
+}
+.btn-cyan{
+    border: 1px solid #31B8F6;
+    color: #fff !important;
+    background: #31B8F6 !important;
+}
+.btn-orange{
+    border: 1px solid orange;
+    color: #fff !important;
+    background: orange !important;
+}
+.btn-deep-orange{
+    border: 1px solid #ff7043;
+    color: #fff !important;
+    background: #ff7043 !important;
+}
+.btn-light-green{
+    border: 1px solid #C4C4C4;
+    color: #fff;
+    background-color: #2BAF2B;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.btn{
+  &.btn-mini{
+    padding:2px 3px;
+  }
+}

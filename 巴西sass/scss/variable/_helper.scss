@@ -1,0 +1,17 @@
+
+
+
+
+$directions: ();
+/// direction  alias
+/// @group map
+/// @prop {} T [top] - top alias
+/// @prop {} R [right] - right alias
+/// @prop {} B [bottom] - bottom alias
+/// @prop {} L [left] - left alias
+$directions: map-merge((
+        'T': 'top'  ,
+        'R': 'right',
+        'B': 'bottom',
+        'L': 'left',
+), $directions);

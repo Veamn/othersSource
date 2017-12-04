@@ -1,0 +1,20 @@
+
+@mixin link {
+
+}
+
+@mixin visited {
+
+}
+
+@mixin hover {
+  @at-root &:hover,&.hover {
+    @content
+  }
+}
+
+@mixin active {
+  @at-root &:hover,&.hover {
+    @content
+  }
+}

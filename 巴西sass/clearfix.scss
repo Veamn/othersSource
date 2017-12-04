@@ -1,0 +1,32 @@
+
+/// 清除浮动影响
+/// @group mixin
+/// @example
+/// // sass
+/// .blick {
+///   @include clearfix;
+/// }
+///
+/// // css
+/// .block::after {
+///   clear: both;
+///   content: '.';
+///   display: block;
+///   height: 0;
+///   line-height: 0;
+///   overflow: hidden;
+///  }
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    *height: 1%;
+}
+.clearfix {
+    @include clearfix;
+}

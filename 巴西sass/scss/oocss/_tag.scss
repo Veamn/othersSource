@@ -1,0 +1,23 @@
+
+// 标签
+.tag{
+  border-radius: 3px;
+  padding: 5px 8px;
+  color: #fff;
+  font-size: 12px;
+  &.tag-green{
+    background: green;
+  }
+  &.tag-blue{
+    background: #1973bf;
+  }
+  &.tag-orange{
+    background: orange;
+  }
+  &.tag-red{
+    background: red;
+  }
+  &.tag-cyan{
+    background: cyan;
+  }
+}

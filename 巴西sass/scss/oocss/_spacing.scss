@@ -1,0 +1,28 @@
+
+
+
+// MT-0 | MT-10 | ...
+// MR-0 | MR-10 | ...
+// MB-0 | ...
+// ML-0 | ...
+// PT-0 | ...
+// PR-0 |
+// PB-0 | ...
+// PL-0 | ...
+////
+/// @group base-css-spacing
+////
+@for $i from 0 through 4 {
+  $x: $i*5;
+  // margin top/right/bottom/left  => 5px/10px/15px/20px
+  @each $direction, $value in $directions {
+    /// @name .M[ T|R|B|L ]-[ 0|5|10|15|20 ]
+    .M#{$direction}-#{$x} {
+      margin-#{$value}: $x + px;
+    }
+    /// @name .P[ T|R|B|L ]-[ 0|5|10|15|20 ]
+    .P#{$direction}-#{$x} {
+      padding-#{$value}: $x + px;
+    }
+  }
+}

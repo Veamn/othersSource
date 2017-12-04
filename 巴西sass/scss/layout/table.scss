@@ -1,0 +1,84 @@
+$color: #DFE6EC;
+
+// @mixin width($number) {
+//   .w#{$number}{
+//   	width: '#{$number}%'
+//   }
+// }
+.table{
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid $color;
+	background: #fff;
+	table-layout:fixed;
+  empty-cells:show;
+  border-collapse: collapse;
+  margin:0 auto;
+	&.stripe{
+		>tbody>tr:nth-child(2n){
+			background: #EEF1F6;
+		}
+	}
+	.table{
+		border: none;
+		background: none;
+	}
+
+
+	thead{
+		background:#EEF1F6;
+		th{
+			line-height: 40px;
+			font-size: 14px;
+			color: #57626E;
+			border-right: 1px solid $color;
+			&:last-child{
+				border-right: none;
+			}
+		}
+	}
+	tbody{
+		tr{
+	        transition: background .3s;
+	        cursor: default;
+			td{
+				line-height: 36px;
+				text-align: center;
+				color: #666;
+				font-size: 14px;
+				border-right: 1px solid $color;
+				border-bottom: 1px solid $color;
+				&:last-child{
+					border-right: none;
+				}
+			}
+		}
+	}
+	&.table-block{
+		.w5{
+			width: 5%;
+		}
+		.w10{
+			width: 10%;
+		}
+		.w15{
+			width: 15%;
+		}
+		.w20{
+			width: 20%;
+		}
+		.w25{
+			width: 25%;
+		}
+		.w30{
+			width: 30%;
+		}
+	}
+
+	// @include width(5);
+	// @include width(10);
+	// @include width(15);
+	// @include width(20);
+	// @include width(25);
+	// @include width(30);
+}

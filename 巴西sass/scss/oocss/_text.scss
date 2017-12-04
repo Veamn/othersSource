@@ -1,0 +1,85 @@
+
+/*
+*  text attr class
+*/
+
+////
+/// @group base-css-text
+////
+
+/// text-#{colors}  => colors map form '../variables/colors.scss'
+/// eg :
+/// .text-red | .text-blue | ...
+@each $color,$value in $colors {
+
+  /// @name .text-[ blue|red|... ]
+  .text-#{$color} {
+    color: $value
+  }
+}
+
+@each $color,$value in $grays {
+
+  /// @name .text-[ blue|red|... ]
+  .text-#{$color} {
+    color: $value
+  }
+}
+
+// text-#{align}
+@each $align in center, left, right {
+  /// @name .text-[center|L|R]
+  .text-#{$align} {
+    text-align: $align;
+  }
+}
+
+// text-#{transform}
+@each $transform in lowercase, uppercase, capitalize {
+  /// @name .text-[lowercase|uppercase|capitalize]
+  .text-#{$transform} {
+    text-transform: $transform;
+  }
+}
+
+
+
+
+/// 文字下划线
+.text-underline {
+  text-decoration: underline;
+}
+
+/// 可鼠标选中
+.text-select{
+    user-select: text;
+}
+/// 不可鼠标选中
+.text-select-none{
+    user-select: none;
+}
+/// 文字加粗
+.text-bold{
+    font-weight: bold;
+}
+/// 大文字
+.text-big{
+    font-size: 1rem;
+}
+/// 小字体
+.text-normal{
+    font-size: 14px;
+}
+/// 超小mini字体
+.text-mini{
+    font-size: .6rem;
+}
+.text-vertical-center {
+  height: 100%;
+  line-height: 100%;
+}
+
+
+.text-warp {
+  word-wrap: break-word;
+}
